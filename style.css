@@ -1,0 +1,115 @@
+
+html{
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Encode Sans', sans-serif;
+    background-color: aqua;
+    background-image:url(/img/vecteezy_abstract-seamless-pattern-backgrounds-vector-memphis-liens_24117704.jpg);
+    background-size: cover
+}
+.container{
+    display: grid;
+    grid-template-rows:5fr 1fr 1fr ;
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    border-radius: 20px;
+    
+}
+.quote p{
+    text-align: center;
+    width: 100%;
+}
+.quote{
+    font-size: 1.4rem;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    font-weight:300 ;
+    display: flex;
+}
+
+.fa-quote-left{
+    font-size: 3rem;
+}
+    
+.author{
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    cursor: pointer;
+    background-color: rgb(194, 194, 194);
+    padding :5px 30px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold
+    
+}
+.fa-twitter{
+    font-size: 1.2rem;
+    color: black;
+}
+
+button:hover{
+    background-color:#ff663d;
+}
+
+
+@media screen and (max-width: 800px) {
+   
+    .quote{
+        font-size: 1.2rem;
+    }
+    .container{
+        padding: 20px
+       
+    }
+    .fa-quote-left{
+        font-size: 1.3rem;
+    }
+        
+    .author{
+
+        font-size: 1.2rem;
+    }
+  }
+@media screen and (max-width: 500px) {
+   
+    .quote{
+        font-size: 0.9rem;
+    }
+    .container{
+        padding: 20px;
+        width: 400px;
+        height: 300px;
+       
+    }
+    .fa-quote-left{
+        font-size: 1rem;
+    }
+        
+    .author{
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    button{
+        cursor: pointer;
+        background-color: rgb(194, 194, 194);
+        padding :0px 10px;
+        border-radius: 10px;
+        border: none
+    }
+  }
